@@ -1,0 +1,26 @@
+{
+  "name": "prct05-objects-classes",
+  "version": "1.0.0",
+  "main": "ejercicio-1.js",
+  "scripts": {
+    "dev": "tsc-watch --onSuccess \"node dist/ejercicio-2.js\"",
+    "doc": "typedoc",
+    "test": "vitest run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "eslint": "^9.19.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-tsdoc": "^0.4.0",
+    "globals": "^15.14.0",
+    "prettier": "^3.4.2",
+    "tsc-watch": "^6.2.1",
+    "typedoc": "^0.27.6",
+    "typescript-eslint": "^8.22.0",
+    "vitest": "^3.0.5"
+  }
+}
