@@ -2,37 +2,37 @@ import { describe, test, expect } from "vitest";
 import {
   ArtistData,
   DiscographyData,
-  GenresData,
   SongData,
-} from "../src/ejercicio-2";
+  GenresData,
+} from "../src/ejercicio-2/interfaces";
 
 describe("Test iniciales Ejercicio 2", () => {
   const GranVia: SongData = {
-    name: "Gran Via",
+    songName: "Gran Via",
     duration: 130,
-    genre: [GenresData.Reggaeton],
-    single: false,
+    genres: [GenresData.Reggaeton],
+    isSingle: false,
     reproductions: 200000,
   };
 
   const BuenasNoches: DiscographyData = {
-    name: "Buenas noches",
+    discographyName: "Buenas noches",
     year: 2024,
     songs: [GranVia],
   };
 
   const artist1: ArtistData = {
-    name: "Quevedo",
+    artistName: "Quevedo",
     listeners: 20000,
-    discography: [BuenasNoches],
+    discographies: [BuenasNoches],
   };
   test("Test the name", () => {
-    expect(artist1.name).toBe("Quevedo");
+    expect(artist1.artistName).toBe("Quevedo");
   });
   test("Test the discography", () => {
-    expect(artist1.discography).toStrictEqual([BuenasNoches]);
+    expect(artist1.discographies).toStrictEqual([BuenasNoches]);
   });
   test("Test the discography song name", () => {
-    expect(artist1.discography[0].name).toBe("Buenas noches");
+    expect(artist1.discographies[0].discographyName).toBe("Buenas noches");
   });
 });

@@ -16,7 +16,7 @@ export class Song implements SongData {
     private _songName: string,
     private _duration: number,
     private _genres: GenresData[],
-    private _single: boolean,
+    private _isSingle: boolean,
     private _reproductions: number,
   ) {
     if (this.duration <= 0) {
@@ -42,8 +42,8 @@ export class Song implements SongData {
     return this._genres;
   }
 
-  get single(): boolean {
-    return this._single;
+  get isSingle(): boolean {
+    return this._isSingle;
   }
 
   get reproductions(): number {

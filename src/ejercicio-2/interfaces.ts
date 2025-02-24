@@ -22,7 +22,7 @@ export interface SongData {
   songName: string;
   duration: number;
   genres: GenresData[];
-  single: boolean;
+  isSingle: boolean;
   reproductions: number;
 }
 
