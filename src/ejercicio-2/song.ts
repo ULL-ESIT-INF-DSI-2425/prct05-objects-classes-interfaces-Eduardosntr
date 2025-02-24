@@ -30,6 +30,7 @@ export class Song implements SongData {
     }
   }
 
+  /** Getter for the song name */
   get songName(): string {
     return this._songName;
   }
