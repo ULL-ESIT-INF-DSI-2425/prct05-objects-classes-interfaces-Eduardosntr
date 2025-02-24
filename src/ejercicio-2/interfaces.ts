@@ -19,9 +19,9 @@ export enum GenresData {
  * Interface that represents a Song data
  */
 export interface SongData {
-  name: string;
+  songName: string;
   duration: number;
-  genre: GenresData[];
+  genres: GenresData[];
   single: boolean;
   reproductions: number;
 }
@@ -30,7 +30,7 @@ export interface SongData {
  * Interface that represents a Discography data
  */
 export interface DiscographyData {
-  name: string;
+  discographyName: string;
   year: number;
   songs: SongData[];
 }
@@ -39,7 +39,7 @@ export interface DiscographyData {
  * Interface that represents a Artist data
  */
 export interface ArtistData {
-  name: string;
+  artistName: string;
   listeners: number;
-  discography: DiscographyData[];
+  discographies: DiscographyData[];
 }
