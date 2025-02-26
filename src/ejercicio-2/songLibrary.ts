@@ -10,7 +10,11 @@ export class SongLibrary {
     return this._artists;
   }
 
-  public getNumberOfSongs(albumName: string): number {
+  public showInformation() {
+    console.table(this);
+  }
+
+  public numberOfSongs(albumName: string): number {
     let numberOfSongs = 0;
     this.artists.forEach((artist) => {
       artist.discographies.forEach((discography) => {
@@ -20,5 +24,33 @@ export class SongLibrary {
       });
     });
     return numberOfSongs;
+  }
+
+  public albumDuration(albumName: string): number {
+    let duration = 0;
+    this.artists.forEach((artist) => {
+      artist.discographies.forEach((discography) => {
+        if (discography.discographyName == albumName) {
+          discography.songs.forEach((song) => {
+            duration += song.duration;
+          });
+        }
+      });
+    });
+    return duration;
+  }
+
+  public albumReproductions(albumName: string): number {
+    let reproductions = 0;
+    this.artists.forEach((artist) => {
+      artist.discographies.forEach((discography) => {
+        if (discography.discographyName == albumName) {
+          discography.songs.forEach((song) => {
+            reproductions += song.reproductions;
+          });
+        }
+      });
+    });
+    return reproductions;
   }
 }

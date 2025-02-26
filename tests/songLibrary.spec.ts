@@ -14,10 +14,10 @@ describe("Song Library Tests", () => {
   ];
 
   const DondeQuieroEstarSongs: Song[] = [
-    new Song("Donde Quiero Estar", 240, [GenresData.Reggaeton], false, 202),
-    new Song("Yankee", 230, [GenresData.Reggaeton], false, 20),
-    new Song("Dame", 240, [GenresData.Reggaeton], false, 2000),
-    new Song("Wanda", 300, [GenresData.Reggaeton], false, 300),
+    new Song("Donde Quiero Estar", 240, [GenresData.Reggaeton], false, 10),
+    new Song("Yankee", 230, [GenresData.Reggaeton], false, 10),
+    new Song("Dame", 240, [GenresData.Reggaeton], false, 10),
+    new Song("Wanda", 300, [GenresData.Reggaeton], false, 10),
   ];
 
   const dtmfSongs: Song[] = [
@@ -51,10 +51,18 @@ describe("Song Library Tests", () => {
   });
 
   test("Test if the method that counts the songs of an album or ep are correct", () => {
-    expect(Spotify.getNumberOfSongs("dtmf")).toBe(4);
+    expect(Spotify.numberOfSongs("dtmf")).toBe(4);
   });
 
   test("Test if the method that counts the songs of an album or ep are correct", () => {
-    expect(Spotify.getNumberOfSongs("Donde Quiero Estar")).toBe(4);
+    expect(Spotify.numberOfSongs("Donde Quiero Estar")).toBe(4);
+  });
+
+  test("Test if the method that gets the duration of an album or ep is correct", () => {
+    expect(Spotify.albumDuration("Donde Quiero Estar")).toBe(1010);
+  });
+
+  test("Test if the method that gets the number or reprodocutions of an album or ep is correct", () => {
+    expect(Spotify.albumReproductions("Donde Quiero Estar")).toBe(40);
   });
 });
