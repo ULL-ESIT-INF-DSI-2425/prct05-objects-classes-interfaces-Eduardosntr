@@ -2,6 +2,12 @@ import { ArtistData } from "./interfaces";
 import { Discography } from "./discography";
 
 export class Artist implements ArtistData {
+  /**
+   * Constructor of the class Artist
+   * @param _artistName - The name of the artist
+   * @param _listeners - The number of listeners
+   * @param _discographies - The discographies of the artist
+   */
   constructor(
     private _artistName: string,
     private _listeners: number,
