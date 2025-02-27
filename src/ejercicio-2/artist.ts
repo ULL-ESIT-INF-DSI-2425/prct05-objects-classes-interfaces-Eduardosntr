@@ -26,4 +26,8 @@ export class Artist implements ArtistData {
   get discographies() {
     return this._discographies;
   }
+
+  public showInformation(): void {
+    console.table([this]);
+  }
 }

@@ -49,4 +49,8 @@ export class Song implements SongData {
   get reproductions(): number {
     return this._reproductions;
   }
+
+  public showInformation(): void {
+    console.table([this]);
+  }
 }

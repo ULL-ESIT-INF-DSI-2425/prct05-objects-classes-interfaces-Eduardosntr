@@ -53,6 +53,10 @@ export abstract class Discography implements DiscographyData {
     return this.songs.length;
   }
 
+  public showInformation(): void {
+    console.table([this]);
+  }
+
   abstract type(): string;
 }
 

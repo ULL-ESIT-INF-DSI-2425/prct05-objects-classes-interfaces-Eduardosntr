@@ -43,3 +43,11 @@ export interface ArtistData {
   listeners: number;
   discographies: DiscographyData[];
 }
+
+export interface TableData {
+  artistName: string;
+  discographyName: string;
+  songName: string;
+  duration: number;
+  reproductions: number;
+}
