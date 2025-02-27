@@ -1,7 +1,7 @@
 import { describe, test, expect } from "vitest";
-import { Song } from "../src/ejercicio-2/song";
-import { GenresData } from "../src/ejercicio-2/interfaces";
-import { Album, Episode } from "../src/ejercicio-2/discography";
+import { Song } from "../../src/ejercicio-2/song";
+import { GenresData } from "../../src/ejercicio-2/interfaces";
+import { Album, Episode } from "../../src/ejercicio-2/discography";
 
 describe("Test iniciales Ejercicio 2", () => {
   const buenasNochesSongs: Song[] = [
