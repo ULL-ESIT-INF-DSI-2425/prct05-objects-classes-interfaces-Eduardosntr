@@ -1,6 +1,6 @@
 import { describe, test, expect } from "vitest";
-import { Song } from "../../src/ejercicio-2/song";
-import { GenresData } from "../../src/ejercicio-2/interfaces";
+import { Song } from "../src/ejercicio-2/song";
+import { GenresData } from "../src/ejercicio-2/interfaces";
 
 describe("Test clase Song", () => {
   const song = new Song("Kassandra", 120, [GenresData.Reggaeton], false, 20);

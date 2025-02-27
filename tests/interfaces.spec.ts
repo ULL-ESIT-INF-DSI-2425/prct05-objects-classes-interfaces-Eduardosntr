@@ -4,7 +4,7 @@ import {
   DiscographyData,
   SongData,
   GenresData,
-} from "../../src/ejercicio-2/interfaces";
+} from "../src/ejercicio-2/interfaces";
 
 describe("Test iniciales Ejercicio 2", () => {
   const GranVia: SongData = {

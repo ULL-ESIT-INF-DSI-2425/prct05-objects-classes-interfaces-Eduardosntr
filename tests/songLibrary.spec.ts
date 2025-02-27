@@ -1,9 +1,9 @@
 import { describe, test, expect } from "vitest";
-import { Song } from "../../src/ejercicio-2/song";
-import { GenresData } from "../../src/ejercicio-2/interfaces";
-import { Episode } from "../../src/ejercicio-2/discography";
-import { Artist } from "../../src/ejercicio-2/artist";
-import { SongLibrary } from "../../src/ejercicio-2/songLibrary";
+import { Song } from "../src/ejercicio-2/song";
+import { GenresData } from "../src/ejercicio-2/interfaces";
+import { Episode } from "../src/ejercicio-2/discography";
+import { Artist } from "../src/ejercicio-2/artist";
+import { SongLibrary } from "../src/ejercicio-2/songLibrary";
 
 describe("Song Library Tests", () => {
   const buenasNochesSongs: Song[] = [
